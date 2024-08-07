@@ -1,0 +1,43 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 3;
+}
+
+.add_modal {
+    display: none;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    position: absolute;
+    width: 50%;
+    padding: 30px;
+    background-color: white;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    border-radius: 10px;
+
+    &_input {
+        width: 100%;
+        border-radius: 4px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .navbar_btns {
+        justify-content: space-between;
+    }
+
+    .navbar_row{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

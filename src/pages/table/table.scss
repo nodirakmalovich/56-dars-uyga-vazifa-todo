@@ -1,0 +1,14 @@
+.completed-task {
+    color: grey;
+    background-color: rgba(95, 145, 106, 0.585);
+}
+
+@media only screen and (max-width: 450px) {
+    .table_actions{
+        flex-wrap: wrap;
+    }
+
+    .edit_modal{
+        justify-content: space-between;
+    }
+}
